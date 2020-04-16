@@ -1,23 +1,155 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            height: 560px;
+            width: 340px;
+            margin: 50px;
+            border: 1px solid black;
+        }
 
-  <title>CSS Exercise 7</title>
+        .interior,
+        ::before,
+        ::after {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
 
-  <style>
-  	
-  </style>
+        .div1 {
+            position: absolute;
+            top: 10px;
+            left: 230px;
+            background: rgba(255, 0, 0, 1);
+
+        }
+
+        .div1:before {
+            position: absolute;
+            right: 110px;
+            content: " ";
+            background: rgba(255, 0, 0, 0.5);
+
+        }
+
+        .div1:after {
+            position: absolute;
+            right: 220px;
+            content: " ";
+            height: 100px;
+            width: 100px;
+            background: rgba(255, 0, 0, 0.2);
+
+        }
+
+        .div2 {
+            position: absolute;
+            top: 120px;
+            left: 230px;
+            background: rgba(255, 128, 0, 1);
+
+        }
+
+        .div2:before {
+            position: absolute;
+            right: 110px;
+            content: " ";
+            background: rgba(255, 128, 0, 0.5);
+        }
+
+        .div2:after {
+            position: absolute;
+            right: 220px;
+            content: " ";
+            background: rgba(255, 128, 0, 0.2);
+        }
+
+        .div3 {
+            position: absolute;
+            top: 230px;
+            left: 230px;
+            background: rgba(255, 255, 25, 1);
+        }
+
+        .div3:before {
+            position: absolute;
+            right: 110px;
+            content: " ";
+            background: rgba(255, 255, 25, 0.5);
+        }
+
+        .div3:after {
+            position: absolute;
+            right: 220px;
+            content: " ";
+            background: rgba(255, 255, 25, 0.3);
+        }
+
+        .div4 {
+            position: absolute;
+            top: 340px;
+            left: 230px;
+            background: rgba(0, 0, 255, 1);
+           
+        }
+
+        .div4:before {
+            position: absolute;
+            right: 110px;
+            content: " ";
+            background: rgba(0, 0, 255, 0.5);
+        }
+
+        .div4:after {
+            position: absolute;
+            right: 220px;
+            content: " ";
+            background: rgba(0, 0, 255, 0.3);
+        }
+
+        .div5 {
+            position: absolute;
+            top: 450px;
+            left: 230px;
+            background: rgba(255, 51, 255, 1);
+            
+        }
+
+        .div5:before {
+            position: absolute;
+            right: 110px;
+            content: " ";
+            background: rgba(255, 51, 255, 0.5);
+        }
+
+        .div5:after {
+            position: absolute;
+            right: 220px;
+            content: " ";
+            background: rgba(255, 51, 255, 0.3);
+        }
+
+    </style>
 </head>
+
 <body>
-	<!-- Do not touch the HTML please -->
-	<div class="container">
-		<div class="interior div1"></div>
-		<div class="interior div2"></div>
-		<div class="interior div3"></div>
-		<div class="interior div4"></div>
-		<div class="interior div5"></div>
-	</div>
+
+    <div class="square">jhghjg</div>
+
+    <div class="container">
+        <div class="interior div1"></div>
+        <div class="interior div2"></div>
+        <div class="interior div3"></div>
+        <div class="interior div4"></div>
+        <div class="interior div5"></div>
+    </div>
+
 </body>
+
 </html>

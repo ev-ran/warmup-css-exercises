@@ -1,15 +1,132 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <title>CSS Exercise 3</title>
+	<title> 3 CSS Exercise 3</title>
 
-  <style>
-  	
-  </style>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.container {
+			position: relative;
+			height: 260px;
+			width: 260px;
+			margin: 50px;
+			border: 2px solid black;
+		}
+
+		.div1 {
+			position: relative;
+			height: 100px;
+			width: 100px;
+			top: 20px;
+			left: 20px;
+			background-color: blue;
+		}
+
+		.div1:before {
+			position: absolute;
+			left: 120px;
+			content: " ";
+
+			height: 100px;
+			width: 100px;
+			background-color: blue;
+
+		}
+
+		.div1:after {
+			position: absolute;
+			top: 120px;
+			content: "";
+
+			height: 100px;
+			width: 100px;
+			background-color: blue;
+
+		}
+
+		.div2 {
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			top: 140px;
+			left: 140px;
+			background-color: blue;
+		}
+
+		.div2:before {
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			content: " ";
+			bottom: 60px;
+			right: 60px;
+			transform: rotate(45deg);
+			background-color: red;
+		}
+
+		.div2:after {
+			background-color: white;
+			position: absolute;
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			content: " ";
+			bottom: 90px;
+			right: 90px;
+
+		}
+
+		.div5 {
+			position: absolute;
+			top: 125px;
+			left: 120px;
+
+			height: 0px;
+			width: 0px;
+			border-right: 10px solid transparent;
+			border-bottom: 7px solid black;
+			border-left: 10px solid transparent;
+			transform: rotate(35deg);
+
+		}
+
+		.div5:before {
+			position: absolute;
+			top: -5px;
+			left: -7px;
+
+			height: 0px;
+			width: 0px;
+			border-bottom: 10px solid black;
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			transform: rotate(-35deg);
+			content: '';
+		}
+
+		.div5:after {
+			position: absolute;
+			top: 0px;
+			left: -10px;
+
+			height: 0;
+			width: 0;
+			border-right: 10px solid transparent;
+			border-bottom: 7px solid black;
+			border-left: 10px solid transparent;
+			transform: rotate(-70deg);
+			content: '';
+		}
+	</style>
 </head>
+
 <body>
 	<!-- Do not touch the HTML please -->
 	<div class="container">
@@ -18,6 +135,8 @@
 		<div class="interior div3"></div>
 		<div class="interior div4"></div>
 		<div class="interior div5"></div>
+
 	</div>
 </body>
+
 </html>

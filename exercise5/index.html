@@ -1,15 +1,70 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <title>CSS Exercise 5</title>
+	<title>5 CSS Exercise 5</title>
 
-  <style>
-  	
-  </style>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.container {
+			position: relative;
+			height: 170px;
+			width: 340px;
+			margin: 50px;
+			border: 1px solid black;
+		}
+
+		.interior {
+			height: 100px;
+			width: 100px;
+			margin: 0;
+			border: 5px solid white;
+
+		}
+
+		.div1 {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			background-color: red;
+		}
+
+		.div2 {
+			position: absolute;
+			top: 10px;
+			left: 120px;
+			background-color: orange;
+		}
+
+		.div3 {
+			position: absolute;
+			top: 10px;
+			left: 230px;
+			background-color: yellow;
+		}
+
+		.div4 {
+			position: absolute;
+			top: 60px;
+			left: 65px;
+			background-color: blue;
+		}
+
+		.div5 {
+			position: absolute;
+			top: 60px;
+			left: 175px;
+			background-color: palevioletred;
+		}
+	</style>
 </head>
+
 <body>
 	<!-- Do not touch the HTML please -->
 	<div class="container">
@@ -20,4 +75,5 @@
 		<div class="interior div5"></div>
 	</div>
 </body>
+
 </html>
